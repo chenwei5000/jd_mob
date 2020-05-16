@@ -1,0 +1,197 @@
+
+
+* {
+	-webkit-tap-highlight-color: rgba(0,0,0,0);
+    outline: 0;
+}
+
+html, 
+body, 
+div, 
+span, 
+ul, 
+ol, 
+dl, 
+li, 
+dt, 
+dd,
+form,
+input, 
+a,
+img,
+button,
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+strong,
+ins,
+del,
+em {
+	margin: 0;
+	padding: 0;
+} 
+
+ul, ol {
+	list-style: none;
+}
+
+a {
+	font-size: 14px;
+	color: #ccc;
+	text-decoration: none;
+}
+
+html, body {
+	height: 100%;
+	font-size: 28.8px;
+}
+
+body {
+	font-size: 14px;
+	font-family: "Microsoft Yahei", Arial;
+}
+
+input, button {
+	border: none;
+	outline: none;
+}
+
+textarea {
+	resize: none;
+}
+
+img {
+	display: block;
+}
+
+.clearfix::before,
+.clearfix::after {
+	content: "";
+	display: block;
+	height: 0;
+	line-height: 0;
+	visibility: hidden;
+}
+
+.clearfix::after {
+	clear: both;
+}
+
+
+/* 整体的布局盒子 */
+.layout {
+	max-width: 640px;
+	min-width: 320px;
+	margin: 0 auto;
+}
+
+/* 顶部搜索模块 */
+.search-wraper {
+	position: fixed;
+	max-width: 640px;
+	min-width: 320px;
+	width: 100%;
+	height: 44px;
+	/* background-color: #e43130; */
+	background-color: rgba(228, 49, 48, 0);
+	z-index: 1;
+}
+
+.search-menu {
+	float: left;
+	width: 40px;
+	height: 44px;
+	overflow: hidden;
+}
+
+.search-menu span {
+	display: block;
+	width: 20px;
+	height: 18px;
+	margin: 14px 0 0 15px;
+	background: url(../images/menu.png) no-repeat;
+	background-size: 100% 100%;
+}
+
+.search-login {
+	position: absolute;
+	top: 0;
+	right: 0;
+	width: 40px;
+	height: 44px;
+	line-height: 44px;
+}
+.search-login a {
+	color: #fff;
+}
+
+.search-form {
+	height: 44px;
+	margin: 0 40px;
+	padding-left: 10px;
+	padding-right: 10px;
+	box-sizing: border-box;
+	overflow: hidden;
+}
+
+.search-info {
+	width: 100%;
+	height: 30px;
+	margin-top: 7px;
+	padding-left: 68px;
+	box-sizing: border-box;
+	border-radius: 15px;
+	background-color: #fff;
+	position: relative;
+}
+.search-info .logo {
+	position: absolute;
+	top: 8px;
+	left: 15px;
+	width: 20px;
+    height: 15px;
+    background: url(../images/logo.png) no-repeat;
+    background-size: 20px 15px;
+}
+.search-info .logo::after {
+	content: "";
+    position: absolute;
+    border-right: 1px solid #ddd;
+    top: 0;
+    left: 26px;
+    height: 16px;
+}
+.search-info .ser {
+	display: block;
+	position: absolute;
+	top: 8px;
+	left: 37px;
+    width: 18px;
+    height: 15px;
+    background: url(../images/jd-sprites.png) no-repeat;
+    background-position: -80px 0;
+    background-size: 200px;
+    margin-left: 10px;
+}
+.search-info input {
+	border: 0;
+    background: 0 0;
+    font-size: 12px;
+    color: #232326;
+    padding-left: 5px;
+    width: 19em;
+    box-sizing: border-box;
+    -webkit-box-flex: 1;
+    height: auto;
+    margin: 0 0 0 5px;
+    vertical-align: middle;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    width: 100%;
+    line-height: 30px;
+}
+
